@@ -1,0 +1,282 @@
+.clsMainView {
+    background: url('../images/header_Img_BG.png') no-repeat;
+    min-height: 852px;
+    background-size: cover;
+}
+
+.clsBlueHeader header {
+    background-color: #39a4db;
+    border: 0.5px solid #989898;
+}
+
+.clsMainView.clsBlueHeader {
+    background: #ffffff;
+}
+
+.clsLogo.col-sm-4 {
+    margin-top: 88px;
+    padding-left: 172px;
+}
+
+header {
+    min-height: 168px;
+}
+
+.clsSeperator {
+    background: url('../images/separator%20one.png') no-repeat;
+    background-size: 100%;
+    height: 6px;
+}
+
+.clsCompanyIntro {
+    height: 602px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.clsIntroSeparator {
+    width: 138px;
+    height: 5px;
+    background-color: #49c9ff;
+    margin: auto;
+}
+
+.clsCompanyIntro h3 {
+    font-size: 30px;
+    color: rgb(88, 88, 88);
+    font-family: "Gotham Rounded";
+    font-style: italic;
+    padding-top: 100px;
+    margin-top: 0px;
+}
+
+.clsCompanyIntro h1 {
+    font-size: 45px;
+    color: rgb(88, 88, 88);
+    font-family: "Gotham Rounded";
+    margin-bottom: 40px;
+}
+
+.clsCompanyIntro pre {
+    border: none;
+    font-size: 18px;
+    color: rgb(88, 88, 88);
+    font-family: "Gotham Rounded";
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.btn.clsBtnFindOut {
+    font-size: 15px;
+    color: rgb(74, 202, 255);
+    font-family: "Gotham Rounded";
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgba(56, 56, 56, 0);
+    border: 2px solid #49c9ff;
+    width: 280px;
+    height: 60px;
+}
+
+.clsSubscribePanel {
+    height: 450px;
+    background-color: #121b25;
+}
+
+.clsSubscribePanel p {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-family: "Gotham Rounded";
+    text-align: center;
+    padding-top: 166px;
+}
+
+input.clsSubscribeEmail {
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    background: url(../images/mail%20icon.png) no-repeat 96%;
+    border: 2px solid #49c9ff;
+    padding-left: 12px;
+    color: rgb(255, 255, 255);
+    font-size: large;
+    display: -webkit-flex;
+    /* Safari */
+    /* -webkit-align-items: center; */
+    /* Safari 7.0+ */
+    /* display: flex; */
+    /* align-items: center; */
+    margin: 20px auto;
+}
+
+input.clsSubscribeEmail::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-size: 14px;
+    line-height: 25px;
+    color: rgb(255, 255, 255);
+    font-family: "Gotham Rounded";
+    font-style: italic;
+    padding-left: 12px;
+}
+
+input.clsSubscribeEmail:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    font-size: 14px;
+    line-height: 25px;
+    color: rgb(255, 255, 255);
+    font-family: "Gotham Rounded";
+    font-style: italic;
+    padding-left: 12px;
+}
+
+input.clsSubscribeEmail::-ms-input-placeholder {
+    /* Microsoft Edge */
+    font-size: 14px;
+    line-height: 25px;
+    color: rgb(255, 255, 255);
+    font-family: "Gotham Rounded";
+    font-style: italic;
+    padding-left: 12px;
+}
+
+
+/** Footer CSS **/
+
+footer {
+    height: 186px;
+    background-color: #f5f5f5;
+}
+
+.clsCompanyEmail {
+    padding-left: 150px;
+    padding-top: 65px;
+}
+
+.clsCompanyEmail a {
+    font-size: 14px;
+    color: rgb(122, 122, 122);
+    font-family: "Gotham Rounded";
+    /* text-align: right; */
+    padding-left: 10px;
+}
+
+.clsFooterPanel {
+    padding-top: 28px;
+    padding-left: 150px;
+}
+
+.clsFooterPanel p {
+    font-size: 14px;
+    color: rgb(166, 165, 165);
+    font-family: "Gotham Rounded";
+}
+
+.clsSocialMedia div,
+.clsSocialMedia,
+.clsFooterPanel p {
+    display: inline;
+}
+
+.clsSocialMedia {
+    float: right;
+    padding-right: 150px;
+}
+
+.clsTweet {
+    padding-right: 5px;
+    margin-right: 6px;
+    background: url(../images/Twitterbird.png) no-repeat;
+    width: 55px;
+    padding-left: 15px;
+    height: 18px;
+    border-radius: 2px;
+    border: 1px solid;
+    font-size: 12px;
+    line-height: 25px;
+    color: rgb(24, 100, 135);
+    font-family: "Helvetica Neue";
+    box-shadow: 0.5px 0.866px 0px rgba(255, 255, 255, 0.61);
+}
+
+.clsFB {
+    margin-right: 6px;
+    margin-left: 15px;
+    background: url(../images/Facebook.png) no-repeat;
+    width: 55px;
+    padding-left: 15px;
+    height: 18px;
+    border-radius: 2px;
+    background-color: #ebedf5;
+    border: 1px solid #c9d3e7;
+    font-size: 11px;
+    letter-spacing: 0px;
+    line-height: 25px;
+    color: rgb(59, 89, 152);
+    font-family: "Lucida Grande";
+    box-shadow: 0.5px 0.866px 0px rgba(255, 255, 255, 0.61);
+    padding-right: 5px;
+}
+
+.clsFbCount {
+    /* border: 1px solid #d1d1d1; */
+    font-size: 11px;
+    letter-spacing: 0px;
+    color: rgb(0, 0, 0);
+    font-family: "Lucida Grande";
+}
+
+.clsTweetCount {
+    font-size: 12px;
+    letter-spacing: 0px;
+    line-height: 25px;
+    color: rgb(42, 112, 144);
+    font-family: "Helvetica";
+    font-weight: bold;
+    width: 32px;
+    height: 18px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    border: 1px solid #cde3ef;
+}
+
+.arrow_box {
+    position: relative;
+    background: #ffffff;
+    /* border: 1px solid #cde3ef; */
+}
+
+.arrow_box:after,
+.arrow_box:before {
+    right: 97%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.arrow_box:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-right-color: #ffffff;
+    border-width: 6px;
+    margin-top: -5px;
+}
+
+.arrow_box:before {
+    border-color: rgba(205, 227, 239, 0);
+    /* border-right-color: #cde3ef; */
+    border-width: 5px;
+    margin-top: -6px;
+}
+
+.clsCount.clsFBCount.arrow_box {
+    border: 1px solid #d1d1d1;
+    width: 25px;
+    height: 16px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    padding: 0px 2px 0px 3px;
+}

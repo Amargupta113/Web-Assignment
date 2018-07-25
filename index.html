@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app='TwoBytesApp'>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TwoBytes</title>
+    <script src="angular.min.js"></script>
+    <script src="angular-route.min.js"></script>
+    <script src="app.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="http://mbenford.github.io/ngTagsInput/js/ng-tags-input.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://mbenford.github.io/ngTagsInput/css/ng-tags-input.min.css" />
+    <link href="resources/Home.css" rel="stylesheet" />
+    <link href="resources/Register.css" rel="stylesheet" />
+    <link href="resources/Profile.css" rel="stylesheet" />
+    <link href="resources/MainView.css" rel="stylesheet" />
+    <link href="resources/Navigation.css" rel="stylesheet" />
+    <link href="resources/Mobility.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class='container-fluid clsMainView' ng-class={clsBlueHeader:blnShowProfileView}>
+        <div ng-include="'view/header.htm'" ng-controller="headerViewCtrl"></div>
+        <div ng-view></div>
+    </div>
+    <div class="clsSeperator" ng-hide=blnShowProfileView></div>
+    <div ng-include="'view/intro.htm'" ng-hide=blnShowProfileView></div>
+    <div class="clsSeperator"></div>
+    <div ng-include="'view/subscribe.htm'"></div>
+    <div class="clsSeperator"></div>
+    <div ng-include="'view/footer.htm'"></div>
+    <div ng-include="'view/register.htm'"></div>
+
+</body>
+
+</html>

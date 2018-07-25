@@ -1,0 +1,358 @@
+/****** Register Form CSS ****/
+
+.modal-header {
+    height: 94px;
+    background-color: #39a4db;
+    border: 0.5px solid #989898;
+}
+
+.modal-dialog {
+    min-width: 68%;
+}
+
+h4.modal-title {
+    font-size: 32px;
+    line-height: 25px;
+    color: rgb(255, 255, 255);
+    font-family: "Myriad Pro";
+    padding: 15px;
+}
+
+input.clsInputFirstName.ng-invalid {
+    border-color: red;
+}
+
+button.close.clsRegClose {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: #f7f7f7;
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    color: #ffffff;
+    /* font-size: large; */
+}
+
+.modal-body {
+    padding: 30px 30px;
+}
+
+.clsRegisterPhoto {
+    width: 174px;
+    height: 174px;
+    background-color: #f5f5f5;
+}
+
+.clsImageUpload label {
+    font-size: 18px;
+    line-height: 12px;
+    color: rgb(58, 165, 220);
+    font-family: "Myriad Pro";
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+input.clsInputFirstName {
+    width: 243px;
+    height: 62px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    padding-left: 15px;
+    font-size: 25px;
+}
+
+input.clsInputLastName {
+    width: 173px;
+    height: 62px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    padding-left: 15px;
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+.clsFormInput ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-size: 25px;
+    line-height: 91px;
+    color: rgb(195, 193, 193);
+    font-family: "Myriad Pro";
+}
+
+.clsFormInput :-ms-input-placeholder {
+    font-size: 25px;
+    line-height: 91px;
+    color: rgb(195, 193, 193);
+    font-family: "Myriad Pro";
+}
+
+.clsFormInput ::-ms-input-placeholder {
+    font-size: 25px;
+    line-height: 91px;
+    color: rgb(195, 193, 193);
+    font-family: "Myriad Pro";
+}
+
+.clsInputEmail {
+    width: 443px;
+    height: 62px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: 2px solid rgba(227, 227, 227, 0.6);
+    padding-left: 15px;
+    font-size: 25px;
+}
+
+.clsInputMob {
+    width: 443px;
+    height: 62px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    padding-left: 15px;
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.clsRegEmail {
+    margin-top: 30px;
+}
+
+.clsRegAge {
+    margin-top: 30px;
+}
+
+.clsRegDropDown,
+.clsRegInputAddress {
+    display: block;
+    margin-top: 30px;
+    width: 443px;
+    height: 62px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    padding-left: 15px;
+    font-size: 25px;
+    line-height: 91px;
+    color: rgb(195, 193, 193);
+    font-family: "Myriad Pro";
+    /* -webkit-appearance:none; */
+}
+
+select.clsRegDropDown {
+    -webkit-appearance: none;
+    /*Removes default chrome and safari style*/
+    -moz-appearance: none;
+    /* Removes Default Firefox style*/
+    background: url('../images/Select_Drop-Down.png') no-repeat;
+    /*Adds background-image*/
+    background-position: 96% 50%;
+    /*Position of the background-image*/
+    text-indent: 0.01px;
+    /* Removes default arrow from firefox*/
+    text-overflow: "";
+    /*Removes default arrow from firefox*/
+}
+
+#AgeRange {
+    position: relative;
+    top: -5px;
+    width: 369px;
+    height: 2px;
+    background-color: #d6d6d7;
+    -webkit-appearance: none;
+    display: inline;
+    margin-left: 10px;
+}
+
+.clsAgeSlider:after {
+    content: '60';
+    color: rgb(195, 193, 193);
+    font-size: 16px;
+    top: 10px;
+    position: relative;
+}
+
+.clsAgeSlider:before {
+    content: '20';
+    color: rgb(195, 193, 193);
+    font-size: 16px;
+    top: 10px;
+    position: relative;
+}
+
+.clsAgeSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    border-radius: 11px;
+    background-color: #a4abae;
+    cursor: pointer;
+}
+
+.clsAgeSlider::-moz-range-thumb {
+    width: 22px;
+    height: 22px;
+    border-radius: 11px;
+    background-color: #a4abae;
+    cursor: pointer;
+}
+
+.clsRegAge label {
+    font-size: 25px;
+    color: rgb(195, 193, 193);
+    font-family: "Myriad Pro";
+}
+
+.modal-header .close {
+    padding: 15px;
+}
+
+input#AgeRange:focus {
+    outline: none;
+}
+
+.clsImageUpload {
+    padding-left: 30px;
+    padding-top: 35px;
+}
+
+.clsFormInput {
+    margin-top: 35px;
+}
+
+.clsInputFirstName.ng-untouched {
+    border-color: rgba(0, 0, 0, 0.15)!important;
+}
+
+tags-input .tags .tag-item .remove-button {
+    font-size: 25px;
+    color: rgb(255, 204, 51);
+    font-family: "Myriad Pro";
+}
+
+.clsRegTags tags-input .tags {
+    width: 443px;
+    height: 62px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    margin-top: 30px;
+    outline: none;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+tags-input .tags .tag-item {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-family: "Myriad Pro";
+    height: 36px;
+    background-color: #89959f!important;
+    background: none;
+    padding-top: 5px;
+}
+
+tags-input .tags .input {
+    float: left;
+    height: 36px;
+    width: 101px!important;
+    font-size: 25px;
+}
+
+tags-input .tags .tag-item .remove-button:hover {
+    text-decoration: none;
+}
+
+.clsRegCommonTags tags-input .tags .input {
+    display: none;
+}
+
+.clsRegCommonTags tags-input {
+    width: 443px;
+}
+
+.clsRegCommonTags tags-input .tags {
+    width: 443px;
+    height: 60px;
+    margin-top: 20px;
+    outline: none;
+    padding-left: 15px;
+    padding-top: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.clsRegCommonTags tags-input .tags .tag-item {
+    margin-right: 20px;
+}
+
+.clsRegLabelSubscribe {
+    font-size: 25px;
+    color: rgb(195, 193, 193);
+    font-family: "Myriad Pro";
+    margin-left: 10px;
+}
+
+.clsRegCheckbox {
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    background-color: #989898;
+    border: 0.5px solid #989898;
+}
+
+input.clsRegCheckbox[type="checkbox"]:checked:after {
+    /* Heres your symbol replacement - this is a tick in Unicode. */
+    color: #000000;
+    left: 4px;
+}
+
+input.clsRegCheckbox[type="checkbox"]:after {
+    content: "\2713";
+    color: #989898;
+    position: relative;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+input[type=checkbox]:focus {
+    outline: none;
+    outline-offset: 0px;
+}
+
+.clsRegSub {
+    margin-top: 30px;
+}
+
+button.modalSubmit {
+    margin-left: 25px;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-family: "Source Sans Pro";
+    width: 153px;
+    height: 55px;
+    border-radius: 4px;
+    background-color: #39a5db;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+button.modalCancel {
+    font-size: 25px;
+    color: rgb(134, 134, 134);
+    font-family: "Source Sans Pro";
+    width: 153px;
+    height: 55px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.29);
+}
+
+.clsSubmitBtnPanel {
+    margin-left: 110px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,22 @@
+<header class='row'>
+    <div class='clsLogo col-sm-4'>
+        <div>
+            <img src='images/twobytes.png' />
+        </div>
+        <div>
+            <img src='images/consulting.png' />
+        </div>
+    </div>
+    <div class="topnav col-sm-8" id="myTopnav">
+        <a href="javascript:void(0)" class="clsNavClosebtn" ng-click="onCloseNavBtnClick()">&times;</a>
+        <button class="clsNavBtn" ng-class={clsActiveBtn:checkActiveScreen(homeRoute)} ng-click="onNavigationButtonClick(homeRoute)">Home</button>
+        <button class="clsNavBtn" ng-class={clsActiveBtn:checkActiveScreen(aboutusRoute)} ng-click="onNavigationButtonClick(aboutusRoute)">About Us</button>
+        <button class="clsNavBtn" ng-class={clsActiveBtn:checkActiveScreen(jobsRoute)} ng-click="onNavigationButtonClick(jobsRoute)">Jobs</button>
+        <button class="clsNavBtn" ng-class={clsActiveBtn:checkActiveScreen(clientsRoute)} ng-click="onNavigationButtonClick(clientsRoute)">Clients</button>
+        <button class="clsNavBtn" ng-class={clsActiveBtn:checkActiveScreen(employersRoute)} ng-click="onNavigationButtonClick(employersRoute)">Employers</button>
+        <button class="clsNavBtn" ng-class={clsActiveBtn:checkActiveScreen(contactusRoute)} ng-click="onNavigationButtonClick(contactusRoute)">Contact Us</button>
+    </div>
+    <a href="javascript:void(0);" class="icon" ng-click='onNavigationMenuClick()'>
+        <i class="fa fa-bars"></i>
+    </a>
+</header>

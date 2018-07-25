@@ -1,0 +1,82 @@
+<div id="RegisterModal" class="modal fade" ng-controller="registerViewCtrl">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Register</h4>
+            </div>
+            <div class="modal-body">
+                <form class="clsRegForm" name="userRegisterForm">
+                    <div class="row">
+                        <div class="clsImageUpload col-sm-4">
+                            <img ng-src="{{RegistrationInput.UserImage}}" ng-show="RegistrationInput.UserImage" class="clsRegisterPhoto" />
+                            <img src="images/DefaultPic.png" ng-show="!RegistrationInput.UserImage" class="clsRegisterPhoto" />
+                            <label ng-model="RegistrationInput.UserImage" ng-file-select="onFileSelect($files)" accept='image/*'>upload your photo<input type="file" accept='image/*' id="inputUserImage" style="display: none;"></label>
+
+                        </div>
+                        <aside class="clsFormInput col-sm-8">
+                            <div class="form-group">
+                                <input type="text" class="clsInputFirstName" placeholder="First Name" ng-model='RegistrationInput.FirstName' required ng-pattern="/^[a-zA-Z]{1,20}$/" />
+                                <input type="text" class="clsInputLastName" placeholder="Last Name" ng-model='RegistrationInput.LastName' />
+                            </div>
+                            <div class="clsRegEmail">
+                                <input type="email" class="clsInputEmail" placeholder="Email" ng-model='RegistrationInput.Email' />
+                            </div>
+                            <div class="clsRegMobile">
+                                <input type="text" class="clsInputMob" placeholder="(541) 754-3010" ng-model='RegistrationInput.MobNumber' />
+                            </div>
+                            <div class="clsRegAge">
+                                <label>Age</label><span id="SelectedAge"></span>
+                                <input type="range" min="20" max="60" ng-model='RegistrationInput.Age' value="20" class="clsAgeSlider" id="AgeRange">
+
+                            </div>
+                            <select ng-model="RegistrationInput.State" class="clsRegDropDown">
+                                    <option disabled selected value>State
+                                    <option value="Maharashtra">Maharashtra
+                                    <option value="Gujarat">Gujarat
+                                    <option value="Delhi">Delhi
+                                </select>
+                            <select ng-model="RegistrationInput.Country" class="clsRegDropDown">
+                                    <option disabled selected value>Country
+                                    <option value="India">India
+                                    <option value="Nepal">Nepal
+                                    <option value="Usa">Usa
+                            </select>
+                            <select ng-model="RegistrationInput.AddressType" class="clsRegDropDown">
+                                    <option disabled selected value>Address
+                                    <option value="Home">Home
+                                    <option value="Company">Company
+                            </select>
+                            <div class="clsRegAddress" ng-switch="RegistrationInput.AddressType">
+                                <div ng-switch-when="Home">
+                                    <input type="text" class="clsRegInputAddress" ng-model="RegistrationInput.AddressPart1" placeholder="Address 1">
+                                    <input type="text" class="clsRegInputAddress" ng-model="RegistrationInput.AddressPart2" placeholder="Address 2">
+                                </div>
+                                <div ng-switch-when="Company">
+                                    <input type="text" class="clsRegInputAddress" ng-model="RegistrationInput.CompAddressPart1" placeholder="Company Address 1">
+                                    <input type="text" class="clsRegInputAddress" ng-model="RegistrationInput.CompAddressPart2" placeholder="Company Address 2">
+                                </div>
+                            </div>
+                            <div class="clsRegTags">
+                                <tags-input ng-model="RegistrationInput.Tags"></tags-input>
+                            </div>
+                            <div class="clsRegCommonTags" ng-hide="RegistrationInput.CommonTags.length==0">
+                                <tags-input ng-model="RegistrationInput.CommonTags"></tags-input>
+                            </div>
+                            <div class="clsRegSub">
+                                <input type="checkbox" class="clsRegCheckbox" name='RegSubscribe' ng-model='RegistrationInput.Subscribe'><label class="clsRegLabelSubscribe">subscribe to newsletter
+                                </label>
+                            </div>
+                            <div class="clsSubmitBtnPanel">
+                                <button type="button" class="modalCancel" data-dismiss="modal">Cancel</button>
+                                <button type="button" class="modalSubmit" ng-disabled='!userRegisterForm.$valid' ng-click="userRegisterForm.$valid && onSubmitClick(RegistrationInput)">Submit</button>
+                            </div>
+                        </aside>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>

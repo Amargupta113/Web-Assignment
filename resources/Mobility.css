@@ -1,0 +1,220 @@
+@media screen and (max-width: 950px) {
+    .clsMainView {
+        min-height: auto;
+    }
+    .clsLogo.col-sm-4 {
+        padding: 0px;
+        margin: 50px 50px;
+    }
+    .topnav.col-sm-8 {
+        padding: 0px;
+        margin: 0px;
+    }
+    .clsSearchPanel {
+        width: 90%;
+        margin: 0px auto;
+    }
+    .clsSearchPanel h3 {
+        font-size: 40px;
+        letter-spacing: 0px;
+        padding-left: 0px;
+        text-align: center;
+        margin-top: 100px;
+    }
+    .clsSearchPanel>div {
+        padding: 0px;
+        margin-top: 30px;
+    }
+    .clsSearchInput {
+        margin: 0px auto;
+    }
+    select#search_Loc {
+        margin: 20px auto;
+        float: none
+    }
+    .clsSearchBtnPanel {
+        margin: 0px auto;
+        width: 140px;
+        padding: 0px
+    }
+    button.btn.clsRegisterBtn {
+        margin: 50px auto;
+    }
+    .clsCompanyIntro h3 {
+        padding-top: 50px;
+        font-size: 25px;
+    }
+    .clsCompanyIntro pre {
+        margin: 20px;
+        font-size: 15px;
+    }
+    .clsCompanyIntro {
+        height: 450px
+    }
+    .btn.clsBtnFindOut {
+        min-width: 200px;
+    }
+    .clsSubscribePanel {
+        max-height: 300px;
+    }
+    .clsSubscribePanel p {
+        padding-top: 100px;
+    }
+    .clsCompanyEmail {
+        padding-top: 40px;
+        padding-left: 0px;
+        width: 180px;
+        margin: 0px auto;
+    }
+    .clsFooterPanel p {
+        font-size: 12px;
+        text-align: center;
+        display: flex;
+        padding-top: 15px;
+        padding-left: 0px;
+        width: 330px;
+        margin: 0px auto;
+    }
+    .clsFooterPanel {
+        padding: 0px;
+    }
+    .clsSocialMedia {
+        padding: 0px;
+        float: none;
+        display: block;
+        width: 185px;
+        margin: 10px auto;
+    }
+    footer {
+        height: 160px
+    }
+    h4.modal-title,
+    .modal-header .close {
+        padding: 0px
+    }
+    .modal-header {
+        height: 60px;
+    }
+    .input.clsInputLastName {
+        display: block;
+    }
+    .clsRegisterPhoto {
+        width: 150px;
+        height: 150px;
+    }
+    .clsImageUpload,
+    .clsFormInput {
+        padding: 0px
+    }
+    input.clsInputFirstName,
+    .clsInputMob,
+    .clsInputEmail,
+    input.clsInputLastName,
+    .clsInputEmail,
+    select.clsRegDropDown,
+    .clsRegInputAddress,
+    .clsRegTags tags-input .tags,
+    .clsRegCommonTags tags-input .tags,
+    .clsRegCommonTags tags-input {
+        width: 90%;
+        height: 40px;
+        font-size: 15px;
+    }
+    #AgeRange {
+        width: 80%;
+    }
+    .clsRegTags tags-input .tags {
+        padding: 7px;
+    }
+    .clsRegLabelSubscribe,
+    .clsRegAge label {
+        font-size: 15px;
+    }
+    button.modalSubmit,
+    button.modalCancel {
+        font-size: 15px;
+        width: 100px;
+        height: 30px
+    }
+    .clsSubmitBtnPanel {
+        margin: 20px auto;
+        width: 230px;
+    }
+    .clsFormInput ::placeholder {
+        font-size: 15px;
+    }
+    .clsFormInput :-ms-input-placeholder {
+        font-size: 15px;
+    }
+    .clsFormInput ::-ms-input-placeholder {
+        font-size: 15px;
+    }
+    input.clsInputLastName,
+    .clsRegTags tags-input .tags,
+    .clsRegSub,
+    .clsRegDropDown,
+    .clsRegInputAddress,
+    clsRegAge,
+    .clsInputMob,
+    .clsRegEmail {
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+    .clsFormInput {
+        margin-top: 20px;
+    }
+    select.clsRegDropDown {
+        -webkit-appearance: menulist-button;
+        /*Removes default chrome and safari style*/
+        -moz-appearance: menulist-button;
+        /* Removes Default Firefox style*/
+        background: none;
+    }
+    tags-input .tags .tag-item,
+    tags-input .tags .tag-item .remove-button {
+        font-size: 15px;
+        height: 22px;
+        padding: 0px;
+    }
+    tags-input .tags .input {
+        height: 25px
+    }
+    .clsAgeSlider:before,
+    .clsAgeSlider:after {
+        font-size: 10px
+    }
+    .clsProfileView {
+        padding-left: 50px;
+        padding-top: 40px;
+    }
+    .clsProfileImage {
+        width: 150px;
+        height: 150px;
+    }
+    .clsProfileView h4 {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    .clsProfileView p {
+        font-size: 20px;
+        color: rgb(102, 102, 102);
+        font-family: "Myriad Pro";
+        width: 90%;
+    }
+    .clsCompanyIntro h1 {
+        font-size: 32px;
+    }
+    .modal-content {
+        max-width: 400px;
+    }
+    .clsProfileAgreeBtn {
+        margin-bottom: 50px
+    }
+    .clsCompanyEmail a{
+        padding-left:5px;
+        font-size: 12px;
+    }
+	.clsSeperator {
+		height: 1px;
+	}
+}

@@ -1,0 +1,37 @@
+<section class="clsSearchPanel">
+    <h3>I'm looking for...</h3>
+    <div class="row">
+        <div class="col-sm-8">
+            <div class="form-group">
+                <input type="text" class="form-control clsJobDesc" id="search_Job_Desc" placeholder="Enter a Job Description" />
+                <div class="row clsSearchInput">
+                    <div class="col-sm-6">
+                        <label class="checkbox-inline">
+                            <input type="radio" value="FullTime"  name="JobType" class="clsRadioCheckbox"/>Full Time
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="radio" value="Other" name="JobType" class="clsRadioCheckbox"/>Part Time/Casual/Freelance
+                        </label>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <select class="form-control" id="search_Loc">
+                                <option disabled selected value>Select your Location</option>
+                                <option>Mumbai</option>
+                                <option>Banglore</option>
+                                <option>Pune</option>
+                                <option>Chennai</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clsSearchBtnPanel col-sm-4">
+            <button class="clsSearchBtn"><i class="fa fa-search"></i>Search</button>
+        </div>
+    </div>
+</section>
+<section class="clsRegisterPanel">
+    <button class="btn clsRegisterBtn" data-toggle="modal" data-target="#RegisterModal">Register</button>
+</section>

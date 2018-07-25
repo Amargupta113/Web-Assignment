@@ -1,0 +1,76 @@
+.clsProfileView {
+    background-color: #ffffff;
+    padding-left: 172px;
+    padding-top: 80px;
+}
+
+.clsProfileView h4 {
+    font-size: 32px;
+    color: rgb(58, 165, 220);
+    font-family: "Myriad Pro";
+    margin-bottom: 50px;
+}
+
+.clsProfileImage {
+    width: 310px;
+    height: 325px;
+}
+
+.clsProfileEditPanel {
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.clsProfileEditPanel button,
+.clsProfileEditPanel label {
+    width: 140px;
+    height: 50px;
+    border-radius: 2px;
+    background-color: #ffcb32;
+    font-size: 20px;
+    line-height: 25px;
+    color: rgb(102, 102, 102);
+    font-family: "Myriad Pro";
+    -webkit-appearance: button-bevel;
+    box-shadow: 0px 4px 0px 0px #cb7900;
+}
+
+.clsProfileView p {
+    font-size: 26px;
+    color: rgb(102, 102, 102);
+    font-family: "Myriad Pro";
+    width: 550px;
+}
+
+.clsProfileAgreeBtn {
+    width: 140px;
+    height: 50px;
+    border-radius: 2px;
+    background-color: #48a841;
+    font-size: 20px;
+    line-height: 25px;
+    color: rgb(255, 255, 255);
+    font-family: "Myriad Pro";
+    -webkit-appearance: button-bevel;
+    box-shadow: 0px 4px 0px 0px #67944f;
+}
+
+.clsProfileEmail {
+    color: rgb(58, 165, 220);
+}
+
+.clsProfileEditPanel label {
+    position: relative;
+    font-weight: 400;
+    text-align: center;
+    top: -12px;
+}
+
+.clsProfileEditPanel label span {
+    position: relative;
+    top: 13px;
+}
+
+.clsProfileEditPanel button {
+    margin-left: 20px;
+}

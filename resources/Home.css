@@ -1,0 +1,148 @@
+/**** Home CSS *****/
+
+.clsRadioCheckbox {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    background-color: #ffffff;
+}
+
+.clsSearchPanel h3 {
+    font-size: 55px;
+    letter-spacing: -3px;
+    line-height: 25px;
+    color: rgb(255, 255, 255);
+    font-family: "Gotham Rounded";
+    font-style: italic;
+    padding-left: 152px;
+    margin-top: 194px;
+}
+
+.clsSearchPanel>div {
+    padding-left: 152px;
+    padding-top: 45px;
+}
+
+.form-control.clsJobDesc {
+    max-width: 740px;
+    height: 50px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 0px 0px #e2e2e2;
+}
+
+input.clsSubscribeEmail::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-size: 18px;
+    color: rgb(199, 199, 199);
+    font-family: "Gotham Rounded";
+    font-style: italic;
+    ;
+}
+
+input.clsSubscribeEmail:-ms-input-placeholder {
+    font-size: 18px;
+    color: rgb(199, 199, 199);
+    font-family: "Gotham Rounded";
+    font-style: italic;
+    ;
+}
+
+input.clsSubscribeEmail::-ms-input-placeholder {
+    font-size: 18px;
+    color: rgb(199, 199, 199);
+    font-family: "Gotham Rounded";
+    font-style: italic;
+    ;
+}
+
+.clsJobTypeCnt {
+    width: 740px;
+    margin-top: 30px;
+}
+
+.clsSearchBtn {
+    /*background: url(images/icon.png) no-repeat;*/
+    /*  background-position: 5px;*/
+    width: 140px;
+    height: 50px;
+    border-radius: 2px;
+    background-color: #49c9ff;
+    -webkit-appearance: button-bevel;
+    font-size: 20px;
+    line-height: 25px;
+    color: rgb(255, 255, 255);
+    font-family: "Gotham Rounded";
+    font-style: italic;
+    box-shadow: 0px 4px 0px 0px #3aaddd;
+}
+
+.row.clsSearchInput {
+    max-width: 740px;
+    margin-top: 30px;
+}
+
+label.checkbox-inline {
+    font-size: 13px;
+    line-height: 25px;
+    color: rgb(255, 255, 255);
+    font-family: "Gotham Rounded";
+    font-style: italic;
+    padding-left: 0px;
+}
+
+.clsRadioCheckbox[type="radio"] {
+    margin: 4px 10px 0px 0px;
+}
+
+.clsRadioCheckbox[type="radio"]:checked:after {
+    /* Heres your symbol replacement - this is a tick in Unicode. */
+    color: #000000;
+    left: 1px;
+}
+
+.clsRadioCheckbox[type="radio"]:after {
+    content: "\2713";
+    color: #ffffff;
+    position: relative;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.clsRadioCheckbox[type=radio]:focus {
+    outline: none;
+    outline-offset: 0px;
+}
+
+select#search_Loc {
+    font-size: 13px;
+    line-height: 25px;
+    color: rgb(199, 199, 199);
+    font-family: "Gotham Rounded";
+    font-style: italic;
+    max-width: 247px;
+    float: right;
+}
+
+button.btn.clsRegisterBtn {
+    width: 140px;
+    height: 50px;
+    border-radius: 2px;
+    background-color: #49c9ff;
+    display: flex;
+    margin: 100px auto;
+    font-size: 20px;
+    line-height: 25px;
+    color: rgb(255, 255, 255);
+    font-family: "Myriad Pro";
+    text-align: center;
+    box-shadow: 0px 5px 0px 0px #3aaddd;
+    padding-left: 35px;
+}
+
+.clsSearchBtn i {
+    margin-right: 10px;
+}
