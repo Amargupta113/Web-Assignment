@@ -3,7 +3,8 @@
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <button type="button" class="close" ng-if=blnShowProfileView ng-click="resetData()">&times;</button>
+                <button type="button" class="close" ng-if=!blnShowProfileView data-dismiss="modal">&times;</button>
                 <h4 class="modal-title">Register</h4>
             </div>
             <div class="modal-body">
@@ -69,7 +70,8 @@
                                 </label>
                             </div>
                             <div class="clsSubmitBtnPanel">
-                                <button type="button" class="modalCancel" data-dismiss="modal">Cancel</button>
+                                <button type="button" class="modalCancel" ng-if=!blnShowProfileView data-dismiss="modal">Cancel</button>
+                                <button type="button" class="modalCancel" ng-if=blnShowProfileView ng-click="resetData()">Cancel</button>
                                 <button type="button" class="modalSubmit" ng-disabled='!userRegisterForm.$valid' ng-click="userRegisterForm.$valid && onSubmitClick(RegistrationInput)">Submit</button>
                             </div>
                         </aside>
