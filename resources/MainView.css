@@ -57,7 +57,7 @@ header {
     margin-bottom: 40px;
 }
 
-.clsCompanyIntro pre {
+.clsCompanyIntro p {
     border: none;
     font-size: 18px;
     color: rgb(88, 88, 88);
