@@ -94,6 +94,11 @@ TwoBytesApp.controller('registerViewCtrl', function ($scope, $log, $location, $r
             "text": "hockey"
         }]
     };
+    $scope.submittedData = {};
+
+    function getSubmittedData() {
+        return $scope.submittedData;
+    }
     $scope.onSubmitClick = function (objUserInfo) {
         var fsize = document.getElementById('inputUserImage').files[0];
         if (fsize && fsize.size > 403000) //310*325px image
@@ -119,13 +124,26 @@ TwoBytesApp.controller('registerViewCtrl', function ($scope, $log, $location, $r
                     RegisterUserService.userInfo.TagFinal += ", ";
                 }
             }
+            try {
+                angular.copy(RegisterUserService.userInfo, getSubmittedData());
+            } catch (err) {
 
+            }
             $location.path("/profile");
         }
         console.log(RegisterUserService.userInfo);
     };
+    $scope.resetData = function () {
+        try {
+            angular.copy(getSubmittedData(), RegisterUserService.userInfo);
+        } catch (err) {
+
+        }
+        $("#RegisterModal").modal("hide");
+    }
 
     console.log("In side Reg");
+
 });
 TwoBytesApp.directive("ngFileSelect", function (fileReader, $timeout) {
 
@@ -222,3 +240,8 @@ TwoBytesApp.controller('userProfileCtrl', function ($scope, $log, $timeout, $rou
 
     };
 });
+
+function onRegisterBtnClick() {
+    document.getElementById("myTopnav").className = "topnav col-sm-8";
+    $("#RegisterModal").modal("show");
+}
